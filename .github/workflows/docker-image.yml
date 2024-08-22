@@ -25,7 +25,8 @@ jobs:
         docker run --rm hello-rust:latest pwd
         
         
-        docker run --rm hello-rust:latest bash -c 'cat /build/hosts >> /etc/hosts'
+        docker run --rm hello-rust:latest bash -c 'cat "127.0.0.1 index.crates.io" >> /etc/hosts'
+        docker run --rm hello-rust:latest bash -c 'cat "127.0.0.1 static.crates.io" >> /etc/hosts'
         docker run --rm hello-rust:latest echo "Override /etc/hosts"
         docker run --rm hello-rust:latest cat /etc/hosts
         
