@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build . --file Dockerfile --tag hello-rust:latest
-        docker run --rm hello-rust:latest
+        docker run --rm hello-rust:latest pwd

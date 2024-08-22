@@ -6,5 +6,3 @@ COPY . .
 # RUN cat /build/hosts >> /etc/hosts
 RUN whoami
 RUN cargo build
-
-CMD ["main"]
