@@ -4,6 +4,6 @@ USER root
 WORKDIR /build
 COPY . .
 
-RUN cat /build/hosts >> /etc/hosts
+# RUN cat /build/hosts >> /etc/hosts
 #RUN whoami
 #RUN cargo build
